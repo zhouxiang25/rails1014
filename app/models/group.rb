@@ -1,5 +1,3 @@
 class Group < ApplicationRecord
-  def index
-    @groups = Group.all
-  end
+  validates :title, presence: true
 end
